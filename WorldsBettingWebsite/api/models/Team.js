@@ -23,11 +23,15 @@ module.exports = {
         required: true
     },
     
-    group: {
-        collection: 'group',
-        via: 'group'
-    }
+    inGroup: {
+        model: 'group'
+    },
 
+    matches: {
+        collection: 'match',
+        via: 'teamsInMatch',
+        dominant: true
+    }
 
   }
 };

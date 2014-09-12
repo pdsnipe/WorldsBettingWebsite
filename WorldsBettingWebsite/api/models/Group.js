@@ -8,7 +8,24 @@
 module.exports = {
 
   attributes: {
+        groupLetter: {
+            type: 'string',
+            required: 'true'
+        },
 
+        hasTeams: {
+            collection: 'team',
+            via: 'inGroup'
+        },
+
+        inGroupStage: {
+            model: 'groupstage'
+        },
+
+        hasMatches: {
+            collection: 'match',
+            via: 'group'
+        }
   }
 };
 

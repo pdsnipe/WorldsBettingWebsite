@@ -9,29 +9,29 @@ module.exports = {
 
   attributes: {
         name: {
-            type: 'STRING',
+            type: 'string',
             required: true
         },
         
         email: {
-            type: 'STRING',
+            type: 'string',
             required: true
         },
 
         password: {
-            type: 'STRING',
+            type: 'string',
             required: true
         },
 
-        groupstagebet: {
-            collection: "Groupstage",
-            via: "Groupstage"
+        groupStageBet: {
+            collection: "groupstage",
+            via: "groupStageOwnder"
         },
         
-        bracketstagebet: {
-            collection: "Bracket",
-            via: "Bracket"
-        }
+        //bracketStageBet: {
+            //collection: "Bracket",
+            //via: "Bracket"
+        //}
   }
 };
 

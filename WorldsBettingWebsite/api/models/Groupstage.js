@@ -8,7 +8,17 @@
 module.exports = {
 
   attributes: {
-
+      groups: {
+            collection: 'group',
+            via: 'inGroupStage'
+      },
+      name: {
+        type: 'string',
+        required: true
+      },
+      groupStageOwner: {
+        model: 'user'
+      }
   }
 };
 

@@ -8,16 +8,26 @@
 module.exports = {
 
   attributes: {
-        teams: {
-            collection: 'Team',
-            via: 'Team'
+        teamsInMatch: {
+            collection: 'team',
+            via: 'matches'
+        },
+        group: {
+            model: 'group'
         },
         winnerName: {
             type: 'string'
         },
         loserName: {
             type: 'string'
+        },
+        winnerScore: {
+            type: 'integer'
+        },
+        loserScore: {
+            type: 'integer'
         }
+
   }
 };
 
