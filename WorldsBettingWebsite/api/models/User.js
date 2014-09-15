@@ -8,21 +8,19 @@
 module.exports = {
 
   attributes: {
-        name: {
+        username: {
             type: 'string',
-            required: true,
             unique: true
         },
         
         email: {
             type: 'string',
-            required: true,
             unique: true
         },
-
-        password: {
-            type: 'string',
-            required: true
+        
+        passports: {
+            collection: 'passport', 
+            via: 'user' 
         },
 
         groupStageBet: {
