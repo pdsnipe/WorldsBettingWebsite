@@ -34,8 +34,23 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
+  '/groups': {
+    view: 'groups'     
+  },
+
+  '/brackets': {
+    view: 'brackets'     
+  },
+
+  '/Rules': {
+    view: 'rules'     
+  },
+
+  '/standings': {
+    view: 'standings'     
+  }
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

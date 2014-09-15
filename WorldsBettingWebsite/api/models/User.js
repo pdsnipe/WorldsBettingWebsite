@@ -10,12 +10,14 @@ module.exports = {
   attributes: {
         name: {
             type: 'string',
-            required: true
+            required: true,
+            unique: true
         },
         
         email: {
             type: 'string',
-            required: true
+            required: true,
+            unique: true
         },
 
         password: {
@@ -25,7 +27,7 @@ module.exports = {
 
         groupStageBet: {
             collection: "groupstage",
-            via: "groupStageOwnder"
+            via: "groupStageOwner"
         },
         
         //bracketStageBet: {

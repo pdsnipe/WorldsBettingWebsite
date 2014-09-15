@@ -1,0 +1,57 @@
+/* Add some margin to the page and set a default font and colour */
+ 
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.8em;
+  color: #333;
+}
+ 
+/* Give headings their own font */
+ 
+h1, h2, h3, h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+ 
+/* Main content area */
+ 
+#content {
+  /*margin: 80px 70px;*/
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ 
+#groupA, #groupB, #groupC, #groupD {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+ 
+#groupTable th, td {
+    padding: 15px;
+}
+
+#groupTable {
+    border: 5px solid black;
+}
+#groupA, #groupB, #groupC, #groupD{ 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 5px; 
+    zoom: 1; 
+}
+#groupA li, #groupB li, #groupC li, #groupD li { 
+    margin: 0 5px 5px 5px; 
+    list-style-position:inside;
+    padding: 3px;
+    width: 90%; 
+    border: 5px solid black;
+}

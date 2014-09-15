@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!--[> Sidebar <]-->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">Fantasy Worlds S4</a>
+                </li>
+                <li>
+                    <a href="/rules">Rules</a>
+                </li>
+                <li>
+                    <a href="/groups">Groups</a>
+                </li>
+                <li>
+                    <a href="/brackets">Brackets</a>
+                </li>
+                <li>
+                    <a href="/standings">Standings</a>
+                </li>
+            </ul>
+        </div>
+        <!--[> /#sidebar-wrapper <]-->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                        <div id="content">
+                            <table id="groupTable">
+                                    <tr>
+                                        <td>Group A</td>
+                                        <td>Group B</td>
+                                        <td>Group C</td>
+                                        <td>Group D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div id="groupA">
+                                                <ul id="groupASortable">
+                                                </ul>
+                                            </div>
+                                        </td>     
+                                        <td>
+                                            <div id="groupB">
+                                                <ul id="groupBSortable">
+                                                </ul>
+                                            </div>
+                                        </td>     
+                                        <td>
+                                            <div id="groupC">
+                                                <ul id="groupCSortable">
+                                                </ul>
+                                            </div>
+                                        </td>     
+                                        <td>
+                                            <div id="groupD">
+                                                <ul id="groupDSortable">
+                                                </ul>
+                                            </div>
+                                        </td>     
+                                    </tr>
+                            </table>
+                        </div>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!--[> Menu Toggle Script <]-->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
