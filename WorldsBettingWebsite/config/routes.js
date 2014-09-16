@@ -42,6 +42,8 @@ module.exports.routes = {
   'get /auth/:provider': 'AuthController.provider',
   'get /auth/:provider/callback': 'AuthController.callback',
 
+  //'post /groupstageTest': 'GroupstageController.groups',
+
   '/': {
     view: 'homepage'
   },

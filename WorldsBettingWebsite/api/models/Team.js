@@ -31,6 +31,27 @@ module.exports = {
         collection: 'match',
         via: 'teamsInMatch',
         dominant: true
+    },
+
+    groupPlacing: {
+        type: 'integer'
+    },
+
+    groupBetFirstPlace: {
+        collection: 'GroupBet',
+        via: 'firstPlace'
+    },
+    groupBetSecondPlace: {
+        collection: 'GroupBet',
+        via: 'secondPlace'
+    },
+    groupBetThirdPlace: {
+        collection: 'GroupBet',
+        via: 'thirdPlace'
+    },
+    groupBetFourthPlace: {
+        collection: 'GroupBet',
+        via: 'fourthPlace'
     }
 
   }

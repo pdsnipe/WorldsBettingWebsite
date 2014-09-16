@@ -12,6 +12,10 @@ module.exports = {
             type: 'string',
             unique: true
         },
+        name: {
+            type: 'string',
+            unique: true
+        },
         
         email: {
             type: 'string',
@@ -24,8 +28,8 @@ module.exports = {
         },
 
         groupStageBet: {
-            collection: "groupstage",
-            via: "groupStageOwner"
+            collection: "GroupStageBet",
+            via: "owner"
         },
         
         //bracketStageBet: {

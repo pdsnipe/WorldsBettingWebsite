@@ -13,6 +13,25 @@ module.exports.bootstrap = function(cb) {
 
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
+
+  //Group.findOne(1).exec(function(err, group){
+    //console.log(group.groupLetter);
+    //if(err)
+
+      //Team.findOne(1).exec(function(err, team){
+        //if(err)
+
+        //group.hasTeams.add(team);
+      //});
+  //});
+  //GroupStageBet.update({id: 1},{owner: 2}).exec(function(err,users){});
+  //User.destroy(1).exec(function(err,users){});
+  User.create({
+      username: 'testuser2',
+      name: 'testuser2',
+      email:'testuser2@testuser1.com',
+      
+    }).exec(function(err, groupBet){});
   sails.services.passport.loadStrategies();
   cb();
 };

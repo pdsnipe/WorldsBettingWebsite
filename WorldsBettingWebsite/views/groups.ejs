@@ -41,14 +41,20 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                         <div id="content">
+                            <select class='form-control' id="userSelect" onchange="onUserSelect()">
+                            </select>
+                            </br>
+                            </br>
                             <table id="groupTable">
                                     <tr>
+                                        <td></td>
                                         <td>Group A</td>
                                         <td>Group B</td>
                                         <td>Group C</td>
                                         <td>Group D</td>
                                     </tr>
                                     <tr>
+                                        <td>1st</br></br>2nd</br></br>3rd</br></br>4th</br></td>
                                         <td>
                                             <div id="groupA">
                                                 <ul id="groupASortable">
@@ -76,7 +82,10 @@
                                     </tr>
                             </table>
                         </div>
+                        </br>
+
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <a class="btn btn-default" id="saveGroups" onclick="Save()">Save</a>
             </div>
         </div>
         <!-- /#page-content-wrapper -->

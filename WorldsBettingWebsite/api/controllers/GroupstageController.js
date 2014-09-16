@@ -6,6 +6,16 @@
  */
 
 module.exports = {
-	
+    groups: function (req,res) {
+        var name = req.param('name');
+        if(name) {
+            findOne({
+                name: this.name
+            }).exec(function (err,groupstage){
+                res.json(groupstage.groups);     
+            });
+        }
+
+    }
 };
 
